@@ -22,20 +22,20 @@ body{
 
 h1{
     margin: 10px;
-    font-family: ClimateCrisis;
+    font-family: ClimateCrisis, serif;
     font-weight: lighter;
 }
 
 h2{
     margin: 10px;
-    font-family: ClimateCrisis;
+    font-family: ClimateCrisis, serif;
     font-weight: lighter;
     font-size: large;
 }
 
 p{
     margin: 5px;
-    font-family: AlbertSans;
+    font-family: AlbertSans, serif;
 }
 
 img{
@@ -51,7 +51,7 @@ img{
 }
 
 .menu a{
-    font-family: AlbertSans;
+    font-family: AlbertSans, serif;
     text-decoration: none;
     color: white;
     margin: 4px;
@@ -132,7 +132,7 @@ img{
 }
 
 .technologies a{
-    font-family: AlbertSans;
+    font-family: AlbertSans, serif;
     text-decoration: none;
     color: white;
     margin: 4px;
