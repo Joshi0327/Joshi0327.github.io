@@ -1,0 +1,251 @@
+@font-face {
+    font-family: ClimateCrisis;
+    src: url("Fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+    font-family: AlbertSans;
+    src: url("Fonts/AlbertSans-VariableFont_wght.ttf");
+}
+
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #050408;
+    color: #E6E5E8;
+}
+
+h1{
+    margin: 10px;
+    font-family: ClimateCrisis;
+    font-weight: lighter;
+}
+
+h2{
+    margin: 10px;
+    font-family: ClimateCrisis;
+    font-weight: lighter;
+    font-size: large;
+}
+
+p{
+    margin: 5px;
+    font-family: AlbertSans;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    padding: 10px;
+}
+
+.menu a{
+    font-family: AlbertSans;
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+    position: relative;
+    width: fit-content;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.singleScreen{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.singleScreen > div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    gap: 20px;
+}
+
+.splitScreenViewSmall{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.splitScreenViewBig{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.splitScreenViewBig img{
+    width: 450px;
+    height: 450px;
+}
+
+.overflow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+    gap: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.overflow img{
+    width: inherit;
+}
+
+.technologies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.technologies a{
+    font-family: AlbertSans;
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background: #2b2b2b;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.technologies img{
+    height: 64px;
+    width: 64px;
+    margin: 10px;
+    background: #2b2b2b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.aboutScreen{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.aboutScreen a{
+    color: white;
+}
+
+.aboutScreenText{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 60%;
+    justify-content: center;
+}
+
+.about{
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.programs{
+    background: #1e1e1e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+
+    border-radius: 10px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.programs div{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    background: #2b2b2b;
+}
+
+.programs img{
+    height: 64px;
+    width: 64px;
+}
+
+@media only screen and (max-width: 1200px){
+    .splitScreen{
+        flex-direction: column;
+        gap: 0;
+    }
+    .splitScreenViewBig img{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .splitScreenViewBig img{
+        height: 200px;
+        width: auto;
+    }
+    .menu {
+        flex-direction: row;
+        bottom: auto;
+        top: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .menu a {
+        margin: 0 10px;
+    }
+    .singleScreen > div {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
