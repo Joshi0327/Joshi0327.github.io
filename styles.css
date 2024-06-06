@@ -167,6 +167,7 @@ img{
 }
 
 .aboutScreen a{
+    font-family: AlbertSans, serif;
     color: white;
 }
 
@@ -247,6 +248,9 @@ img{
     .technologies img{
         height: 40px;
         width: 40px;
+    }
+    .aboutScreenText{
+        width: 100%;
     }
     h1 {
         font-size: 24px;
