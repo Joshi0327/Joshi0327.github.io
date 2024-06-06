@@ -1,11 +1,11 @@
 @font-face {
     font-family: ClimateCrisis;
-    src: url("Fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+    src: url("fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
 }
 
 @font-face {
     font-family: AlbertSans;
-    src: url("Fonts/AlbertSans-VariableFont_wght.ttf");
+    src: url("fonts/AlbertSans-VariableFont_wght.ttf");
 }
 
 
@@ -111,7 +111,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 70%;
     height: 80%;
     gap: 30px;
     overflow: scroll;
@@ -191,7 +191,6 @@ img{
     justify-content: center;
     width: fit-content;
     height: fit-content;
-
     border-radius: 10px;
     padding: 30px;
     gap: 20px;
@@ -220,6 +219,12 @@ img{
         width: 350px;
         height: 350px;
     }
+    .overflow{
+        width: 80%;
+    }
+    .aboutScreenText{
+        width: 80%;
+    }
 }
 @media only screen and (max-width: 600px){
     .splitScreenViewBig img{
@@ -239,6 +244,10 @@ img{
     .singleScreen > div {
         padding: 20px;
     }
+    .technologies img{
+        height: 40px;
+        width: 40px;
+    }
     h1 {
         font-size: 24px;
     }
@@ -246,6 +255,9 @@ img{
         font-size: 20px;
     }
     p {
+        font-size: 14px;
+    }
+    a{
         font-size: 14px;
     }
 }
